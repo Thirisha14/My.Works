@@ -1,0 +1,85 @@
+@import "/student4/common/common.css";
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    background-color: var(--color-secondary);
+    width: 100vw;
+    color: white;
+}
+
+#head-text{
+    font-style: italic;
+}
+
+a{
+    text-decoration:none;
+    color:var(--color-secondary);
+    -webkit-text-stroke-width: 0.03rem;
+    -webkit-text-stroke-color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+a:hover{
+    text-decoration: none;
+    color:darkgoldenrod;
+}
+a:focus{
+    text-decoration: none;
+}
+a:hover, a:active{
+    text-decoration: none;
+}
+
+#body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-box{
+    border: 3px white solid;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    width: 70%;
+    max-width: 90%;
+    border-radius: 0.6rem;
+    background-color: var(--color-nav-active);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#content-container{
+    border: 3px white solid;
+    width: 70%;
+    max-width: 90%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.6rem;
+    background-color: var(--color-nav-active);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-ender{
+    border-bottom: 3px white solid;
+    padding-bottom: 1.5rem;
+}
+
+#menuBtn{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+

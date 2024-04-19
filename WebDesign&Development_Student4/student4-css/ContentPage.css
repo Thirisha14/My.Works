@@ -1,0 +1,334 @@
+@import "/student4/common/common.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+}
+
+:root{
+    --h1:3rem
+}
+
+.page-content{
+    width: 100%;
+    border: #333 1px solid;
+    gap: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    background-color: var(--color-secondary);
+}
+
+header{
+    width: 70%;
+    height: fit-content;
+}
+
+
+.page-editor-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.page-editor-info > div:not(.student-pfp){
+    width: fit-content;
+}
+
+
+.student-pfp{
+    background-image: url("/student4/student4pic.jpg");
+    height: 4rem;
+    width: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+    
+
+}
+
+.page-editor-info > div:first-child > p{
+    font-family: "PoppinsSemiBold";
+    font-size: 1rem;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.tags{
+    border: none;
+    text-decoration: none;
+    gap: 0.5rem;
+    display: none;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.tags > p{
+    font-size: var(--h1);
+    font-family: "PoppinsSemiBold", arial;
+    margin-bottom: 1rem;
+}
+
+.tags > a{
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.content-header{
+    width: 70%;
+    background-color: var(--color-secondary);
+    border: white 1px solid;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 3;
+    background-color: rgba(25, 50, 60, 0.95);
+    width: 30%;
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+aside > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page-info{
+    padding-inline: 1rem;
+    height: 3rem ;
+    width: fit-content;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    gap: 0.65rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgba(25, 50, 60, 0.95);
+  }
+
+  .page-info > p{
+    font-family: "PoppinsSemiBold";
+    color: white;
+    text-transform: capitalize;
+  }
+
+  .page-info > img{
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(105%);
+}
+
+.page-info > img{
+    height: 2rem;
+    width: 2rem; 
+}
+
+.page-info:hover{
+    background-color: var(--color-nav-hover);
+  }
+
+.student-numbers{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.student-numbers > p{
+    text-align: center;
+    height: fit-content;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    font-family: "PoppinsSemiBold", arial;
+}
+
+.student-numbers > p:first-child{
+    color: white;
+    background-color: var(--color-primary);
+    border: white 0.2rem solid;
+}
+
+.student-numbers > p:last-child{
+    background-color: var(--color-secondary);
+}
+
+aside > .tags{
+    color: white;
+}
+
+aside > .tags > a{
+    font-family: "PoppinsSemiBold", arial;
+    width: fit-content;
+    border: white 0.2rem solid;
+}
+
+.content-title-container{
+    position: relative;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('/student4/student4-images/student4-content-bgs/st4-content-page-img1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.content-title-container > p{
+    height: fit-content;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-family: "PoppinsSemiBold", "arial";
+    font-size: 6rem;
+}
+
+section{
+    border: #333 1px solid;
+    display:flex ;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-size{
+    width:100%;
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-section-title{
+    background-color: #1a333d;
+}
+
+.content-section-title > p{
+    border: #333 1px solid;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--h1);
+    color: white;
+    font-family: "PoppinsSemiBold", arial;
+    padding: 0.5rem;
+}
+
+.content-section{
+    width: 60%;
+    border: #333 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    background-color: rgba(136, 212, 159, 0.7);
+}
+
+.content-section > p{
+    font-size: 1.05rem;
+}
+
+.bg-img-1{
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("/student4/student4-images/student4-content-bgs/st4-content-page-img2.jpg");
+}
+
+.bg-img-2{
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("/student4/student4-images/student4-content-bgs/st4-content-page-img3.jpg");
+}
+
+.bg-img-3{
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("/student4/student4-images/student4-content-bgs/st4-content-page-img4.jpg");
+}
+
+.bg-img-4{
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("/student4/student4-images/student4-content-bgs/st4-content-page-img5.jpg");
+}
+
+.bg-img-1, .bg-img-2, .bg-img-3, .bg-img-4{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.references-content{
+    background-color: var(--color-nav-hover);
+    padding: 1.5rem;
+}
+
+.references-content > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+} 
+
+.references-content > ul > li > a{
+    font-size: 1.1rem;
+    font-family: "Poppins", arial;
+    color: white;
+}
+
+.references-content > ul > li {
+    color: white;
+}
+
+
+footer{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    aside{
+        display: none;
+    }
+
+    .content-title-container{
+        width: 100vw;
+    }
+
+    .content-title-container > p{
+        font-size: 4rem;
+    }
+
+    .tags{
+        display: flex;
+    }
+
+    footer{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 497px){
+    .content-section{
+        width: 80%;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tourism</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/student4/student4-css/ImageGallery.css'>
+    <script src='/student4/student4-js/ImageGallery.js'></script>
+    <script src='/student4/common/navBar.js' defer></script>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div class="logo">
+            <img src="/student4/common/cooconut-logo-transparent.png" alt="">
+            <p>Silanko</p>
+        </div>
+        <div id="nav-end">
+            <a href="/student2/student2-html/student2Source.html">
+                <img src="/student4/common/svg/home.svg" alt="">   
+                <p>Home</p>
+            </a>
+            <a href="/student1/student1-html/shop.html">
+                <img src="/student4/common/svg/store.svg" alt="">
+                <p>Store</p>
+            </a>
+            <a href="/student3/student3-html/Quiz.html">
+                <img src="/student4/common/svg/quiz.svg" alt="">
+                <p>Quiz</p>
+            </a>
+            <a href="/student4/student4-html/ImageGallery.html" class="active">
+                <img src="/student4/common/svg/image-gallery.svg" alt="">
+                <p>Gallery</p>   
+            </a>
+            <a href="/student3/student3-html/StudentInfo.html">
+                <img src="/student4/common/svg/about-us.svg" alt="">
+                <p>About Us</p>
+            </a>
+        </div>
+        
+        <a href="javascript:void(0);" id="menuBtn">
+            <img src="/student4/common/svg/open-menu.svg" alt="">
+            <p>Menu</p> 
+        </a>
+    </nav>
+    <div class="container">
+        <div class="image-box">
+            <h1>Image Gallery</h1>          
+            <input type="radio" id="img-01" value="para-01" name="Image" checked>
+            <input type="radio" id="img-02" value="para-02" name="Image">
+            <input type="radio" id="img-03" value="para-03" name="Image">
+            <input type="radio" id="img-04" value="para-04" name="Image">
+            <div class="image-bg"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="buttons">
+            <!-- 0.8em -->
+            <button class="btn font-active" onclick="fontSmall()">A</button>
+            <!-- 1.25em -->
+            <button class="btn" onclick="fontMedium()">A</button>
+            <!-- 1.75em -->
+            <button class="btn" onclick="fontLarge()">A</button>
+        </div>
+        <select onchange="color(this.value)">
+            <option value="">Green</option>
+            <option value="white">White</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <div class="content">
+            <p class="place-info" id="para-01">Sigiriya is an ancient rock fortress located in the northern Matale District near 
+                    the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical 
+                    and archaeological significance that is dominated by a massive column of granite rock 
+                    approximately 180 m (590 ft) high.</p>
+            <p class="place-info" id="para-02"> The Temple of the Sacred Tooth Relic or Sri Dalada Maligawa is a 
+                        Buddhist temple in Kandy,Sri Lanka. It is located in the royal palace complex
+                        of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.
+                        Since ancient times,the relic has played an important role in local politics.</p>
+                        
+            <p class="place-info" id="para-03">Udawalawe National Park is a national park on the boundary of Sabaragamuwa and 
+                        Uva Provinces in Sri Lanka. The park was created to provide a sanctuary for wild animals 
+                        displaced by the construction of the Udawalawe Reservoir on the Walawe River, as well as 
+                        to protect the catchment of the reservoir.</p>
+                        
+            <p class="place-info" id="para-04">Yala National Park is the most visited andsecond largest national park in Sri Lanka,
+                        bordering the Indian Ocean. The park consists of five
+                        blocks, with three of which are now open to the public. There are also two adjoining parks, 
+                        Kumana National Park or 'Yala East' and Lunugamvehera National Park.</p> 
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="/student4/student4-html/PageEditor.html" class="page-info">
+                <img src="/student4/common/svg/info.svg" alt="">
+                <p>page editor</p>
+            </a>
+
+            <a href="/student4/student4-html/Sitemap.html" class="page-info">
+                <img src="/student4/common/svg/map.svg" alt="">
+                <p>SiteMap</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

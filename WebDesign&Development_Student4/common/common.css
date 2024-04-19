@@ -1,0 +1,314 @@
+:root{
+    --color-primary: #1a333d;
+    --color-secondary:#88d49f;
+    --color-nav-active:#305F73;
+    --color-nav-hover:#2A5465;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/student4/common/font/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("/student4/common/font/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "Romastika";
+src: url("/student4/common/font/RosmatikaRegular-BWA45.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-color: var(--color-primary);
+    font-size: 1.3rem; 
+    justify-content: space-around;
+    padding: 1rem;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  #nav-end{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+  }
+  
+  #nav-end > a{
+    padding-inline: 1rem;
+    height: 3rem ;
+    width: fit-content;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    gap: 0.65rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  #nav-end > a > p{
+    font-family: "PoppinsSemiBold";
+    color: white;
+  }
+
+  #nav-end > a > img{
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(105%);
+  }
+
+  #menuBtn{
+    padding-inline: 1rem;
+    padding-top: 0.5rem;
+    top: 1.5rem;
+    right: 1rem;
+    position: absolute;
+    display: none;
+    border: none;
+    height: 3rem;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    gap: 0.65rem;
+  }
+
+  #menuBtn > p{
+    font-family: "PoppinsSemiBold";
+    color: white;
+  }
+
+  #menuBtn > img{
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(105%);
+  }
+  
+  #nav-end > a:hover:not(.active){
+    background-color: var(--color-nav-hover);
+  }
+
+  #menuBtn:hover{
+    background-color: var(--color-nav-hover);
+  }
+  
+  .active{
+    background-color: var(--color-nav-active);
+    outline-color: white;
+    outline-style: solid;
+    outline-width: 0.125rem;
+  }
+
+  .active > p{
+    color: white;
+  }
+
+  .active > img{
+    filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(105%);
+  }
+  
+  
+  
+  #nav-end > a > img{
+    height: 2rem;
+    width: 2rem; 
+  }
+
+  #menuBtn > img{
+    height: 2rem;
+    width: 2rem; 
+  }
+  
+  .logo{
+    height: 4rem;
+    max-width: fit-content;
+    gap: 0.5rem;
+    display: flex;
+    align-content: center;
+  }
+
+  .logo > p{
+    font-family: "Romastika";
+    color: white;
+    font-size: 3rem;
+    height: fit-content;
+    margin-top: 0.75rem;
+  }
+  
+  .logo > img{
+    height: 4rem;
+    width: 4rem; 
+  }
+
+  #nav-bar > #nav-end > #menuBtn{
+    display: none;
+  }
+  
+  
+  /* CSS */
+  .button-primary {
+    background-color: #c2fbd7;
+    border-radius: 0.7rem;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "PoppinsSemiBold";
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms ease-in;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-hover:hover {
+    border: 1px solid green;
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05);
+  }
+
+@media (min-width: 768px) {
+  .button-primary {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* CSS */
+.button-secondary {
+  background-color: #ffff;
+  border-radius: 0.7rem;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "PoppinsSemiBold";
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms ease-in;
+  border: 2px solid #c2fbd7;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.cancel-btn:hover {
+  box-shadow: rgba(187, 44, 44, 0.25) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 44, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(187, 44, 44, 0.25) 0 16px 32px;
+  background-color: rgb(220, 84, 84);
+  color: white;
+  border-color: white;
+  transform: scale(1.05)  ;
+}
+
+footer{
+  width: 100%;
+  height: 6rem;
+  background-color: var(--color-primary);
+}
+
+.footer-content{
+  width: 75%;
+  height: 6rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content > a{
+  padding-inline: 1rem;
+  height: 3rem ;
+  width: fit-content;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer-content > a > p{
+  font-family: "PoppinsSemiBold";
+  color: white;
+  text-transform: capitalize;
+}
+
+.footer-content > a > img{
+  filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(105%);
+}
+
+.footer-content > a > img{
+  height: 2rem;
+  width: 2rem; 
+}
+
+.footer-content  > a:hover{
+  background-color: var(--color-nav-hover);
+}
+
+@media (max-width: 453px) {
+  .footer-content{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) {
+.button-secondary {
+  padding: 0.25em 0.75em;
+}
+}
+  
+  @media only screen and (max-width: 1023px) {
+    #nav-end{
+      display: none;
+      flex-direction: column;
+    }
+
+    #menuBtn{
+      display: flex;
+    }
+
+    #nav-bar{
+      justify-content: space-between;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .logo > p{
+      font-size: 2.5rem;
+    }
+
+    #menuBtn > img{
+      height: 1.75rem;
+      width: 1.75rem; 
+    }
+
+    .logo > img{
+      height: 3.75rem;
+      width: 3.75rem; 
+    }
+  }
